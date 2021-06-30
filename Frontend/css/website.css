@@ -1,0 +1,80 @@
+body {
+    background-image: url('../img/background.jpg');
+}
+.welcomeHome {
+    border-radius: 15px;
+    background-color: rgba(169, 169, 169, 0.4);
+    color: white;
+}
+
+tbody {
+    color: white;
+}
+
+.tabColor {
+    color: white;
+}
+.tabColor:hover {
+    color: white;
+}
+.gameImg {
+    width: 300px;
+    height: auto;
+    border-radius: 5px;
+}
+
+.borderDiv {
+    height: 300px;
+    width: 300px;
+    text-align: center;
+    border-style: solid;
+    border-radius: 5px;
+    margin: auto;
+}
+
+.chatPopup {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    right: 15px;
+    border: 3px solid #f1f1f1;
+    padding: 10px;
+    width: 400px;
+}
+
+#chatHistory {
+    height: 500px;
+    overflow-y: scroll;
+}
+
+.chatSender {
+    float: right;
+    background-color: rgb(86, 117, 39);
+    color: white;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 5px;
+}
+
+.containerdivNewLine {
+    clear: both;
+    display: block;
+    position: relative;
+}
+
+.chat {
+    float: left;
+    background-color: blueviolet;
+    color: white;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 5px;
+}
+
+#chat {
+    background-color: white;
+}
+
+.noMsg {
+    text-align: center;
+}

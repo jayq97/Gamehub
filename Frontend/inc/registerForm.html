@@ -1,0 +1,131 @@
+<script>
+  function hideRegister() {
+    $("#modalRegisterForm").modal("hide");
+  }
+</script>
+<div
+  class="modal fade"
+  id="modalRegisterForm"
+  tabindex="-1"
+  role="dialog"
+  aria-labelledby="myModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">Registrieren</h4>
+        <button
+          type="button"
+          class="close"
+          data-dismiss="modal"
+          aria-label="Close"
+        >
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <form class="text-center" method="POST" action="">
+        <div class="modal-body">
+          <div class="md-form mb-4">
+            <div class="input-group">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="usernameAddon">
+                  <i class="fas fa-user fa-lg" aria-hidden="true"></i>
+                </span>
+              </div>
+              <input
+                type="text"
+                name="username"
+                id="usernameRegister"
+                class="form-control"
+                placeholder="Username"
+                required
+              />
+            </div>
+          </div>
+
+          <div class="md-form mb-4">
+            <div class="input-group">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="passwordAddon">
+                  <i class="fas fa-lock fa-lg" aria-hidden="true"></i>
+                </span>
+              </div>
+              <input
+                type="password"
+                name="password"
+                id="passwordRegister"
+                class="form-control"
+                placeholder="Password"
+                required
+              />
+            </div>
+          </div>
+          <div class="md-form mb-4">
+            <div class="input-group">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="passwordAddon">
+                  <i class="fas fa-lock fa-lg" aria-hidden="true"></i>
+                </span>
+              </div>
+              <input
+                type="password"
+                name="confirmPassword"
+                id="confirmPasswordRegister"
+                class="form-control"
+                placeholder="Repeat Password"
+                required
+              />
+            </div>
+          </div>
+          <div class="md-form mb-2">
+            <div class="input-group">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="passwordAddon">
+                  <i class="fas fa-envelope fa-lg" aria-hidden="true"></i>
+                </span>
+              </div>
+              <input
+                type="email"
+                id="email"
+                class="form-control"
+                name="email"
+                placeholder="Email-Adresse"
+                required
+              />
+            </div>
+          </div>
+
+          <div class="md-form"></div>
+        </div>
+        <div class="modal-footer d-flex justify-content-center">
+          <div class="md-form form-row">
+            <div class="col">
+              <button
+                class="btn btn-outline-info btn-rounded btn-block my-4 waves-effect z-depth-0"
+                type="reset"
+              >
+                Abbrechen
+              </button>
+            </div>
+            <div class="md-form col">
+              <button
+                class="btn btn-outline-info btn-rounded btn-block my-4 waves-effect z-depth-0"
+                name="register"
+                type="submit"
+              >
+                Senden
+              </button>
+            </div>
+          </div>
+        </div>
+        <p>
+          Bereits Registriert?
+          <a href="#modalLoginForm" onclick="hideRegister()" data-toggle="modal"
+            >Jetzt einloggen!</a
+          >
+        </p>
+      </form>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,187 @@
+.uno-body {
+    background-image: url("../img/uno/design/background.png");
+    background-repeat: no-repeat;
+    min-width: 650px;
+    min-height: 800px;
+    position: relative;
+}
+
+.card img {
+    border-style: solid;
+    border-color: rgb(0, 0, 0);
+    border-width: 5px;
+}
+
+.card {
+    border-radius: 15px;
+    position: relative;
+    transition: all 0.4s linear;
+    transform-style: preserve-3d;
+    float: left;
+}
+
+.card,
+.shown,
+.covered {
+    width: 80px;
+    height: 120px;
+}
+
+.shown,
+.covered {
+    position: absolute;
+    backface-visibility: hidden;
+}
+
+.covered {
+    border: 5px solid rgb(255, 255, 255);
+    background: url("../img/uno/cards/back_logo.png") no-repeat center center / contain;
+    background-clip: border-box;
+}
+
+.selected {
+    transform: rotateY(180deg);
+}
+
+.shown {
+    transform: rotateY(180deg);
+}
+
+.directionIndicator {
+    background: url("../img/uno/design/directionClockWise.png") no-repeat center center / contain;
+    background-size: 500px;
+}
+
+.reverseDirectionIndicator {
+    background: url("../img/uno/design/directionReverseClockWise.png") no-repeat center center / contain;
+    background-size: 500px;
+}
+
+
+#ondeck .card:hover {
+    padding: 10px;
+    background-clip: border-box;
+}
+
+#current {
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    width: 250px;
+    padding: 40px;
+    border: 1px;
+    border-style: solid;
+    border-radius: 40px;
+    z-index:101;
+    left:0;
+    bottom: 0;
+}
+
+.playerIndicator {
+    background-color: rgb(255, 255, 255);
+    width: 40px;
+    padding: 40px;
+    border: 1px;
+    border-style: solid;
+    border-radius: 40px;
+}
+
+.turnIndicator {
+    background: url("../img/uno/design/onturn.png") no-repeat center center / contain;
+    width: 50px;
+    height: 50px;
+}
+
+#onpile {
+    position: absolute;
+    left: 15%;
+    top: 15%;
+    width: 70%;
+    height: 70%;
+    background-color: rgba(255, 218, 139, 0.6);
+    border: 1px;
+    border-style: solid;
+    border-radius: 40px;
+    z-index:1;
+
+}
+
+#onpile .card {
+    position: absolute;
+    top: 40%;
+    left: 35%;
+}
+
+#ondeck .card {
+    position: absolute;
+    top: 43%;
+    right: 40%;
+    cursor: pointer;
+    z-index: 100;
+}
+
+#player1 {
+    position: absolute;
+    bottom: 0;
+    left: 43%;
+    z-index: 10;
+}
+
+#player2 {
+    transform: rotate(90deg);
+    position: absolute;
+    top: 43%;
+    left: 0;
+    z-index: 10;
+}
+
+#player3 {
+    transform: rotate(180deg);
+    position: absolute;
+    top: 0;
+    right: 43%;
+    z-index: 10;
+}
+
+#player4 {
+    transform: rotate(270deg);
+    position: absolute;
+    top: 43%;
+    right: 0;
+    z-index: 10;
+}
+
+@media (min-width: 600px) {
+
+}
+
+@media (min-width: 992px) {
+
+}
+
+#onpile img {
+    border-style: solid;
+    border-color: rgb(0, 0, 0);
+    border-width: 6px;
+}
+
+.drop img {
+    border-style: solid;
+    border-color: rgb(255, 255, 255);
+    border-width: 7px;
+    cursor: pointer;
+}
+
+#player1 .card,
+#player2 .card,
+#player3 .card,
+#player4 .card {
+    margin-left: -50px;
+}
+
+#player1 .card:hover,
+#player2 .card:hover,
+#player3 .card:hover,
+#player4 .card:hover {
+    margin-top: -20px;
+    background-clip: border-box;
+}

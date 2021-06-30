@@ -1,0 +1,29 @@
+<div class="uno-body mt-3">
+        <div id="gameboard">
+
+        </div>
+    
+    <div id="chatBox" class="uno-chat controls-wrapper">
+        <div id="playerNamePrompt" class="playerName controls-wrapper">
+            <div class="controls">
+                <div class="chat-wrapper">
+                    <input type="text" id="playerName" value="Guest">
+                    <button type="button" class="btn btn-primary" id="playerButton" onclick="init()">Start</button>
+                </div>
+            </div>
+        </div>
+        <ul id="events"></ul>
+        <div class="controls">
+            <div class="chat-wrapper">
+                <form id="chat-form">
+                    <input id="chat" autocomplete="off" title="chat" disabled />
+                    <button id="say" disabled>Say</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script src='http://localhost:8040/socket.io/socket.io.js'></script>
+<script src="js/uno.js"></script>
